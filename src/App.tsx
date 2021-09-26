@@ -3,13 +3,24 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
+    Redirect,
 } from 'react-router-dom';
 
+import { Header } from './Header';
+import { firstHeaderRoute, routes } from './routes';
 
 export function App() {
-  return (
-    <Router>
+    return (
+        <Router>
+            <Route exact path="/">
+                <Redirect to={firstHeaderRoute.route} />
+            </Route>
 
-    </Router>
-  );
+            <Header />
+
+            <Switch>
+                
+            </Switch>
+        </Router>
+    );
 }

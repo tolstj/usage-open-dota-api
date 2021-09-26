@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+
+.header__link {
+    margin-left: 25px;
+
+    &_active {
+        background: -webkit-linear-gradient(#F26727, #C8331F);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
