@@ -13,6 +13,7 @@ export function Header(): JSX.Element {
                     to={route}
                     className={classes.header__link}
                     activeClassName={classes.header__link_active}
+                    key={route}
                 >
                     {name}
                 </NavLink>

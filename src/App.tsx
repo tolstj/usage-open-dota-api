@@ -21,9 +21,7 @@ export function App() {
             <Switch>
                 <Switch>
                     {routes.map(({ route, component }) => (
-                        <Route path={route}>
-                            {component}
-                        </Route>
+                        <Route path={route} component={component} key={route} />
                     ))}
                 </Switch>
             </Switch>
