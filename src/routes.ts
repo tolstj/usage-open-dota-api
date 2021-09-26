@@ -1,5 +1,7 @@
 import React from 'react';
 import { Heroes } from './components/Heroes';
+import { Pro } from './components/Pro';
+import { Teams } from './components/Teams';
 
 interface Route {
     name?: string;
@@ -16,12 +18,12 @@ export const headerRoutes: Route[] = [
     {
         name: 'Профессионалы',
         route: '/pro',
-        component: Heroes,
+        component: Pro,
     },
     {
         name: 'Команды',
         route: '/teams',
-        component: Heroes,
+        component: Teams,
     },
 ];
 

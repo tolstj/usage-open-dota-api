@@ -1,0 +1,32 @@
+.heroCard__toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 5px;
+    padding: 0 25px;
+    background: #434343;
+    cursor: pointer;
+}
+
+.heroCard__basicInformation {
+    display: flex;
+    align-items: center;
+}
+
+.heroCard__name {
+    margin-left: 15px;
+    color: #868686;
+    user-select: none;
+}
+
+.heroCard__iconArrowRight {
+    width: 13px;
+    height: 13px;
+    fill: #868686;
+    transition: all .3s;
+
+    &_opened {
+        transform: rotate(90deg);
+    }
+}

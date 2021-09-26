@@ -7,6 +7,8 @@
 
 .header__link {
     margin-left: 25px;
+    color: #AAA;
+    user-select: none;
 
     &_active {
         background: -webkit-linear-gradient(#F26727, #C8331F);

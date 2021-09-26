@@ -1,11 +1,9 @@
 import { Hero } from '../interfaces/Hero';
-import { URL } from './api';
-
-const HERO_STATS_URN = '/heroStats';
+import { URL_API } from './api';
 
 export class HeroesService {
     public static async get(): Promise<Hero[]> {
-        const heroes = await fetch(URL + HERO_STATS_URN);
+        const heroes = await fetch(`${URL_API}/heroStats`);
         return heroes.json();
     }
 }
