@@ -19,7 +19,13 @@ export function App() {
             <Header />
 
             <Switch>
-                
+                <Switch>
+                    {routes.map(({ route, component }) => (
+                        <Route path={route}>
+                            {component}
+                        </Route>
+                    ))}
+                </Switch>
             </Switch>
         </Router>
     );
