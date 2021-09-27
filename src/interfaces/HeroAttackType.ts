@@ -1,4 +1,4 @@
-export type HeroAttackType = (
-    | 'Melee'
-    | 'Ranged'
-);
+export enum HeroAttackType {
+    Melee = 'Melee',
+    Ranged = 'Ranged',
+}

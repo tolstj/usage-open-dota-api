@@ -12,3 +12,11 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+input {
+    box-sizing: border-box;
+}
+
+select {
+    cursor: pointer;
+}

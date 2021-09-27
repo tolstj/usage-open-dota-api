@@ -1,5 +1,5 @@
-export type HeroPrimaryAttr = (
-    | 'agi'
-    | 'str'
-    | 'int'
-);
+export enum HeroPrimaryAttr {
+    Agility = 'agi',
+    Strength = 'str',
+    Intelligence = 'int',
+}
