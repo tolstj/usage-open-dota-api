@@ -8,6 +8,15 @@ import classes from './Heroes.module.scss';
 
 export function Heroes(): JSX.Element {
     const [heroes, setHeroes] = useState<Hero[]>([]);
+    const [filterByNameInput, setFilterByNameInput] = useState<string>('');
+
+    function onChangeFilterByNameInput(event: React.ChangeEvent<HTMLInputElement>): void {
+        setFilterByNameInput(event.target.value);
+    }
+
+    function filterByName(hero: Hero): boolean {
+        return hero.localized_name.toLowerCase().startsWith(filterByNameInput.toLowerCase());
+    }
 
     async function setupHeroes(): Promise<void> {
         setHeroes(
@@ -21,13 +30,25 @@ export function Heroes(): JSX.Element {
 
     return (
         <div className={classes.heroes}>
+            <div className={classes.heroes__filter}>
+                <input
+                    className={classes.filterByName}
+                    value={filterByNameInput}
+                    onChange={onChangeFilterByNameInput}
+                    placeholder="Find by name"
+                />
+            </div>
+
             <div className={classes.heroes__table}>
-                {heroes.map((hero) => (
-                    <HeroCard
-                        {...hero}
-                        key={hero.id}
-                    />
-                ))}
+                {heroes
+                    .filter(filterByName)
+                    .map((hero) => (
+                        <HeroCard
+                            {...hero}
+                            key={hero.id}
+                        />
+                    ))
+                }
             </div>
         </div>
     );

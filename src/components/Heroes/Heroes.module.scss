@@ -1,4 +1,23 @@
+.heroes {
+    margin-top: 15px;
+}
+
+.heroes__filter {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.filterByName {
+    height: 25px;
+    padding: 0 5px;
+    background: #434343;
+    color: #868686;
+    border: 1px solid #000; 
+    outline: none;
+}
+
 .heroes__table {
     width: calc(100% - 30px);
     margin: 0 auto;
+    margin-top: 15px;
 }
