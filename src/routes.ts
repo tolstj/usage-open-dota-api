@@ -11,17 +11,17 @@ interface Route {
 
 export const headerRoutes: Route[] = [
     {
-        name: 'Герои',
+        name: 'Heroes',
         route: '/heroes',
         component: Heroes,
     },
     {
-        name: 'Профессионалы',
+        name: 'Professionals',
         route: '/pro',
         component: Pro,
     },
     {
-        name: 'Команды',
+        name: 'Teams',
         route: '/teams',
         component: Teams,
     },

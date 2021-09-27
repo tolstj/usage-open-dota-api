@@ -5,7 +5,7 @@ import classes from './Teams.module.scss';
 export function Teams(): JSX.Element {
     return (
         <div>
-            В разработке
+            In development
         </div>
     );
 }
