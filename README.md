@@ -8,9 +8,10 @@ Now it can:
 1. Load all heroes
 2. Show Hero detailed information
 3. Filter heroes by name
+4. Filter heroes by attack type
 
 Next steps:
-1. Add more filters (by attack type, by primary attribute, by roles)
+1. Add more filters of heroes (by primary attribute, by roles)
 2. Add professionals page
 3. Add teams page
 4. Add common statistics of dota
